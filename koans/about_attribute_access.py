@@ -20,7 +20,7 @@ class AboutAttributeAccess(Koan):
     def test_calling_getattribute_causes_an_attribute_error(self):
         typical = self.TypicalObject()
 
-        with self.assertRaises(Exception): typical.__getattributes__('foobar')
+        with self.assertRaises(Exception): "typical".__getattribute__('foobar')
 
         # THINK ABOUT IT:
         #
